@@ -35,9 +35,16 @@ input:hover::after
 {
 transform: scaleX(1);
 }
+input[read-only]
+{
+    background-color: rgb(189, 148, 148);
+    color: black;
+    font-weight: 700;
+}
 select{
     border-radius: 5px;
     background-color: rgb(199, 176, 176);
+    cursor:grab;
 }
 button
 {
@@ -68,5 +75,49 @@ img{
 textarea{
     background-color: beige;
     border-radius: 7px;
+    border: 4px dotted cornflowerblue;
     
+}
+p{
+    display: none;
+}
+input:hover + p {
+    display: inline;
+    color: #000;
+    background-color: rgb(77, 214, 27);
+}
+input:focus{
+    background-color: rgb(85, 82, 88);
+    color: cadetblue;
+}
+select:hover + p {
+    display: inline;
+    color: #000;
+    background-color: rgb(77, 214, 27);
+}
+select:focus{
+    background-color: rgb(85, 82, 88);
+    color: cadetblue;
+}
+.valid{
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+.nonvalid{
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+input[type="email"]:focus:valid~img.valid
+{
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+input[type="email"]:focus:invalid~img.nonvalid
+{
+    display: inline;
+    height: 15px;
+    width: 15px;
 }

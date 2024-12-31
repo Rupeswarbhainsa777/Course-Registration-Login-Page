@@ -23,19 +23,20 @@
         
                             </td>
                             <td>
-                                <input type="text" id="name" name="name" required placeholder="ex:Ravi Nath" 
+                                <input type="text" id="name" name="name" required placeholder="Ex:Ravi Nath" 
                                 size="20"
-                                maxlength="15">
-                              
+                                maxlength="40">
+                                <p>Enter Your Name</p>
                             </td>
+                            
                         </tr>
                         <tr>
                             <td>
                                 <label for="mobile">Mobile:</label>
                             </td>
                             <td>
-                                <input type="tel" id="mobile" name="mobile" required placeholder="ex:8597645245">
-        
+                                <input type="tel" id="mobile" name="mobile" required placeholder="Ex:8597645245">
+                                <p>Enter mobile Number</p>
                             </td>
                         </tr>
                         </tr>
@@ -44,34 +45,40 @@
                                 <label for="email">Email:</label>
                             </td>
                             <td>
-                                <input type="email" id="email" name="email" required placeholder="ex:ravi55@gmail.com">
+                                <input type="email" id="email" name="email" required placeholder="Ex:ravi55@gmail.com">
+                                <p>Enter email id</p>
+                                <img class="valid" src="/checked.png" >
+                                <img class="nonvalid" src="/decline.png" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password"> Password:</label>
         
+                            </td>
+                            <td>
+                                <input type="password" id="password" name="password" required placeholder="Ex:******">
+                                <p>1 At least 8 characters ,A mixture uppercase and lowercase letters
+                                    ,A mixture of letters and numbers.</p>
+                            </td>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="password">Confirm Password:</label>
-        
                             </td>
                             <td>
-                                <input type="password" id="password" name="password" required placeholder="ex:******">
-        
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="password">Password:</label>
-                            </td>
-                            <td>
-                                <input type="password" id="password" name="password" required placeholder="ex:******">
-                            </td>
+                                <input type="password" id="password" name="password" required placeholder="Ex:******">
+                                
                         </tr>
                         <tr>
                             <td>
                                 <label for="dob">Date of Birth:</label>
+
                             </td>
                             <td>
                                 <input type="date" id="dob" name="dob" required>
+                                <p>Enter Age </p>
         
                             </td>
                         </tr>
@@ -87,6 +94,7 @@
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
                                 </select>
+                                <p>Select Gender</p>
                             </td>
                         </tr>
                         <tr>
@@ -103,6 +111,9 @@
                                     <option value="other">China</option>
                                     <option value="other">Japan</option>
                                 </select>
+                                <p>
+                                    Select Country
+                                </p>
         
                             </td>
                         </tr>
@@ -112,14 +123,12 @@
         
                             </td>
                             <td>
-                                <input type="file" id="imgUpload" name="imgUpload" accept="image/*">
+                                <input type="file" id="imgUpload" name="imgUpload" accept="image/*"  >
+                                <p>Upload img</p>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <button type="submit" class="btn">Register</button>
-        
-                            </td>
+                            
                             <td>
                                 <button type="reset" class="btn reset-btn">Reset</button>
                             </td>
@@ -146,7 +155,11 @@
                                 <option value="data_science">Data Science</option>
                                 <option value="cyber_security">Cyber Security</option>
                                 <option value="artificial_intelligence">Artificial Intelligence</option>
+                               
                             </select>
+                            <p>
+                                Select Course
+                            </p>
                         </td>
                     </tr>
                     <br>
@@ -161,7 +174,11 @@
                                 <option value="online">Online</option>
                                 <option value="offline">Offline</option>
                                 <option value="hybrid">Hybrid</option>
+
                             </select>
+                            <p>
+                                Select Mode of learning
+                            </p>
                         </td>
                     </tr>
                     <tr>
@@ -171,7 +188,10 @@
                             <label >INSTITUTE NAME</label>
                         </td>
                         <td>
-                            <input type="text" value="TAP ACADEMY" readonly>
+                            <input type="text" value="TAP ACADEMY" read-only>
+                            <p>
+                                Select Institute
+                            </p>
                         </td>
                     </tr>
                     <br>

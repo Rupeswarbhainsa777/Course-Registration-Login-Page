@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <h1  class="mini">Course Registration</h1>
+    <div class="parant-container">
+        <div>
+            <fieldset>
+                <legend>Personal details Of Student</legend>
+                <form >
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="name">Name:</label>
+        
+                            </td>
+                            <td>
+                                <input type="text" id="name" name="name" required placeholder="ex:Ravi Nath" 
+                                size="20"
+                                maxlength="15">
+                              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mobile">Mobile:</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="mobile" name="mobile" required placeholder="ex:8597645245">
+        
+                            </td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email" required placeholder="ex:ravi55@gmail.com">
+        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Confirm Password:</label>
+        
+                            </td>
+                            <td>
+                                <input type="password" id="password" name="password" required placeholder="ex:******">
+        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="password" name="password" required placeholder="ex:******">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="dob">Date of Birth:</label>
+                            </td>
+                            <td>
+                                <input type="date" id="dob" name="dob" required>
+        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gender">Gender:</label>
+        
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Country:</label>
+        
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select...</option>
+                                    <option value="male">India</option>
+                                    <option value="female">USA</option>
+                                    <option value="other">Canada</option>
+                                    <option value="other">China</option>
+                                    <option value="other">Japan</option>
+                                </select>
+        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="imgUpload">Upload Image:</label>
+        
+                            </td>
+                            <td>
+                                <input type="file" id="imgUpload" name="imgUpload" accept="image/*">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" class="btn">Register</button>
+        
+                            </td>
+                            <td>
+                                <button type="reset" class="btn reset-btn">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+        
+        
+                </form>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Course Details</legend>
+        
+                <form action="">
+                    <tr>
+                        <td>
+                            <label for="course">Course:</label>
+                        </td>
+                        <td>
+        
+                            <select id="course" name="course" required>
+                                <option value="">Select...</option>
+                                <option value="web_development">Web Development</option>
+                                <option value="data_science">Data Science</option>
+                                <option value="cyber_security">Cyber Security</option>
+                                <option value="artificial_intelligence">Artificial Intelligence</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <label for="mode">Mode of Learning:</label>
+                        </td>
+                        
+                        <td>
+                            <select id="mode" name="mode" required>
+                                <option value="">Select...</option>
+                                <option value="online">Online</option>
+                                <option value="offline">Offline</option>
+                                <option value="hybrid">Hybrid</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <br>
+
+                        <td>
+                            <label >INSTITUTE NAME</label>
+                        </td>
+                        <td>
+                            <input type="text" value="TAP ACADEMY" readonly>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <label for="">Comments</label>
+                            <br>
+                            <textarea rows="4" cols="40"></textarea>
+                        </td>
+                        
+                    </tr>
+                    <br>
+                    
+        
+                        
+                </form>
+        
+            </fieldset>
+            <br>
+        
+            <button type="submit" class="btn">Submit</button>
+        </div>
+        <img src="tap-academy-pvt-ltd-sbi-bank-colony-bangalore-tutorials-uj7mpei0gw.avif" alt="">
+        
+    </div>
+    
+
+</body>
+
+</html>
